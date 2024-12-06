@@ -1,25 +1,26 @@
 class CadastroPage {
     get inputFirstName() {
-        return $('~firstName')
+        return $('id:firstName')
     }
     get inputLastName() {
-        return $('~lastName')
+        return $('id:lastName')
     }
     get inputPhoneNumber() {
-        return $('android=new UiSelector().text("Phone Number")')
+        return $('id:phone')
     }
     get inputEmail() {
-        return $('~email')
+        return $('id:email')
     }
     get inputPassword() {
-        return $('~password')
+        return $('id:password')
     }
     get inputRePassword() {
-        return $('~repassword')
+        return $('id:repassword')
     }
     get btnCreate() {
-        return $('~create')
+        return $('id:create')
     }
+
     async preencherCadastro(firstName, lastName, phone, email, password) {
         await this.inputFirstName.setValue(firstName);
         await this.inputLastName.setValue(lastName);
@@ -28,6 +29,7 @@ class CadastroPage {
         await this.inputPassword.setValue(password);
         await this.inputRePassword.setValue(password);
     }
+
     async clicarCriarConta() {
         await this.btnCreate.click();
     }
