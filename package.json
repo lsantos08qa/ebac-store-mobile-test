@@ -1,6 +1,6 @@
 {
   "name": "ebac-store-mobile-tests",
-  "type": "module",
+  "type": "commonjs",
   "devDependencies": {
     "@faker-js/faker": "^9.2.0",
     "@wdio/allure-reporter": "^9.2.14",

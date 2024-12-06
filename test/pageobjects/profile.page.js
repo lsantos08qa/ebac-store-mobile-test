@@ -1,6 +1,3 @@
-//import { $ } from '@wdio/globals'
-import { $ } from 'webdriverio'
-
 
 class ProfilePage {
     async profileName (name){
@@ -8,4 +5,4 @@ class ProfilePage {
     }
 
 }
-export default new ProfilePage ();
+module.exports = new ProfilePage();

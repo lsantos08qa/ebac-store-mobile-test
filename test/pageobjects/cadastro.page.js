@@ -1,6 +1,3 @@
-//import { $ } from '@wdio/globals'
-import { $ } from 'webdriverio'
-
 class CadastroPage {
     get inputFirstName() {
         return $('~firstName')

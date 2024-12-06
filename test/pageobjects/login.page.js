@@ -1,5 +1,4 @@
-//import { $ } from '@wdio/globals'
-import { $ } from 'webdriverio'
+
 class LoginPage {
 
     get email (){
@@ -17,5 +16,5 @@ class LoginPage {
         await this.btnLogin.click()
     }
 }
+module.exports = new LoginPage();
 
-export default new LoginPage();

@@ -1,4 +1,4 @@
-const CadastroPage = require('../pages/cadastro.page.js')
+const CadastroPage = require('../pageobjects/cadastro.page.js')
 const { faker } = require('@faker-js/faker')
 
 describe('Fluxo de cadastro de usuário', () => {
